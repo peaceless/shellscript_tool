@@ -1,5 +1,5 @@
 #!/bin/bash
-project=("/Users/originals/Boostnote" "/Users/originals/.myscript")
+project=("/Users/originals/Boostnote" "/Users/originals/.myscript" "/Users/originals/blog/public")
 function update() {
     for pro in ${project[@]}; do
         cd $pro
