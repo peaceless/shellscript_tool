@@ -3,10 +3,10 @@ project=("/Users/originals/Boostnote" "/Users/originals/.myscript" "/Users/origi
 function update() {
     for pro in ${project[@]}; do
         cd $pro
-        echo update $pro
+        echo -e "\nupdate ${pro}\n"
         count=`git status -s | wc -l`
         if [ $count -gt 0 ]; then
-            echo "something in buffer"
+            echo -e "\nsomething in buffer\n"
             git add *
             git commit -m "update"
             if [ $? -eq 0 ]; then
